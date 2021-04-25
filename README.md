@@ -25,7 +25,7 @@ low-level API along with an object-oriented API.
 ## Requirements
 
 - iOS 9+ / macOS 10.11+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.1 and Swift 3.0
+- Xcode 12.4 and Swift 5.0
 - Bitcode-enabled Xcode project for non-MacOS
 
 ## Usage
@@ -220,21 +220,15 @@ library under the [LGPL](https://github.com/zeromq/libzmq#license) license.
 
 [travis-badge]: https://travis-ci.org/azawawi/SwiftyZeroMQ.svg?branch=master
 [travis-url]: https://travis-ci.org/azawawi/SwiftyZeroMQ
-
-[swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat
+[swift-badge]: https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat
 [swift-url]: https://swift.org
-
-[zeromq-badge]: https://img.shields.io/badge/ZeroMQ-4.2.1-blue.svg?style=flat
+[zeromq-badge]: https://img.shields.io/badge/ZeroMQ-4.3.4-blue.svg?style=flat
 [zeromq-url]: https://zeromq.org
-
 [platform-badge]: https://img.shields.io/badge/Platforms-iOS%20|%20macOS%20|%20tvOS%20|%20watchOS-blue.svg?style=flat
 [platform-url]: http://cocoadocs.org/docsets/SwiftyZeroMQ
-
 [carthage-badge]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat
 [carthage-url]: https://github.com/Carthage/Carthage
-
 [cocoapods-badge]: https://img.shields.io/cocoapods/v/SwiftyZeroMQ.svg
 [cocoapods-url]: https://cocoapods.org/?q=swiftyzeromq
-
 [mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg?style=flat
 [mit-url]: https://tldrlegal.com/license/mit-license

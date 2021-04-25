@@ -25,13 +25,13 @@ documentation and examples in the sections below.
 
 ### Manual project inclusion
 
-* Download framework source code from [here](https://github.com/azawawi/SwiftyZeroMQ/releases/)
-* Drag the project into your project.
-* In your target's settings, please click on the **+** button under the
-**Embedded Binaries** section and add `SwiftyZeroMQ.framework`. In case it does
-not show up in the list, please close and reopen the project in Xcode.
-* Add `import SwiftyZeroMQ` in your code to test it.
-* Happy hacking :)
+- Download framework source code from [here](https://github.com/azawawi/SwiftyZeroMQ/releases/)
+- Drag the project into your project.
+- In your target's settings, please click on the **+** button under the
+  **Embedded Binaries** section and add `SwiftyZeroMQ.framework`. In case it does
+  not show up in the list, please close and reopen the project in Xcode.
+- Add `import SwiftyZeroMQ` in your code to test it.
+- Happy hacking :)
 
 ### CocoaPods
 
@@ -41,6 +41,7 @@ for your Xcode projects.
 #### Example
 
 If you would like to try out the example iOS project, simply type:
+
 ```bash
 $ pod try SwiftyZeroMQ
 ```
@@ -50,17 +51,20 @@ $ pod try SwiftyZeroMQ
 Please follow these steps to add SwiftyZeroMQ to your project:
 
 - Add the following lines to your `Podfile`:
+
 ```ruby
 use_frameworks!
 pod 'SwiftyZeroMQ', '~> 1.0'
 ```
 
 - Run the following command in the project root directory:
+
 ```bash
 $ pod install
 ```
 
 - Open the project in Xcode with the following command:
+
 ```bash
 $ open YourProject.xcworkspace
 ```
@@ -71,11 +75,13 @@ $ open YourProject.xcworkspace
 dependency manager for Cocoa. Please follow these steps:
 
 - Add the following lines to your 'Cartfile':
+
 ```
 github "azawawi/SwiftyZeroMQ" ~> 1.0
 ```
 
 - Build the `SwiftyZeroMQ.framework` with the following commands:
+
 ```
 $ carthage bootstrap --platform iOS  # Build only the iOS platform
 $ carthage bootstrap                 # Build all supported platforms (can be slow)
@@ -84,8 +90,8 @@ $ carthage bootstrap                 # Build all supported platforms (can be slo
 - Open your Xcode project (if not open already)
 
 - In your target's settings, please click on the **+** button under the
-**Embedded Binaries** section and add
-`Carthage/Build/iOS/SwiftyZeroMQ.framework`
+  **Embedded Binaries** section and add
+  `Carthage/Build/iOS/SwiftyZeroMQ.framework`
 
 ### Swift Package Manager
 
@@ -94,18 +100,19 @@ SPM or SwiftPM) is a tool for managing the distribution of Swift code. It is
 integrated with the Swift build system to automate the process of downloading,
 compiling, and linking dependencies.
 
-*At the time of this writing (October 2016-2017), iOS is not supported.
+_At the time of this writing (October 2016-2017), iOS is not supported.
 Pull requests are more than welcome once the iOS support lands in a future
-version.*
+version._
 
 ## Testing
 
 - In Xcode, open the project and type ⌘U to test it.
 
-*OR*
+_OR_
 
 - In the terminal, please make sure that you have
-[`xcpretty`](https://github.com/supermarin/xcpretty) and then run:
+  [`xcpretty`](https://github.com/supermarin/xcpretty) and then run:
+
 ```bash
 $ gem install xcpretty # Needs to be installed once for prettier output
 $ ./run-tests.rb       # Runs framework unit tests on selected iOS versions
@@ -113,18 +120,18 @@ $ ./run-tests.rb       # Runs framework unit tests on selected iOS versions
 
 ## Bundled ZeroMQ library
 
-The bundled universal static library for ZeroMQ `4.2.1` is provided in the
+The bundled universal static library for ZeroMQ `4.3.4` is provided in the
 `Libraries` folder. Please check the table shown below for included
 architectures and minimum platform version.
 [Bitcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html)
 is enabled for all platforms except macOS.
 
-Library|Minimum OS version|CPU Architectures
----|---|---
-`libzmq-ios.a`|9.0|`armv7` (iPhone 3GS till iPhone 4S), `armv7s` (iPhone 5 till iPhone 5c), `arm64` (iPhone 5s and later), `i386` and `x86_64` (simulator)
-`libzmq-macos.a`|10.11|`x86_64`
-`libzmq-tvos.a`|9.0|`arm64` (Apple TV 4), `x86_64` (simulator)
-`libzmq-watchos.a`|2.0|`armv7k` (Apple Watch), i386 (simulator)
+| Library            | Minimum OS version | CPU Architectures                                                                                                                       |
+| ------------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `libzmq-ios.a`     | 9.0                | `armv7` (iPhone 3GS till iPhone 4S), `armv7s` (iPhone 5 till iPhone 5c), `arm64` (iPhone 5s and later), `i386` and `x86_64` (simulator) |
+| `libzmq-macos.a`   | 10.11              | `x86_64`                                                                                                                                |
+| `libzmq-tvos.a`    | 9.0                | `arm64` (Apple TV 4), `x86_64` (simulator)                                                                                              |
+| `libzmq-watchos.a` | 2.0                | `armv7k` (Apple Watch), i386 (simulator)                                                                                                |
 
 ## Import
 
@@ -149,7 +156,7 @@ print("ZeroMQ library version is \(major).\(minor).\(patch)")
 ```
 
 For more information about the ZeroMQ low level API, please consult the
-[ZeroMQ 4.2 API](http://api.zeromq.org/4-2:_start).
+[ZeroMQ 4.3 API](http://api.zeromq.org/4-3:_start).
 
 ## High level API
 
@@ -179,7 +186,7 @@ do {
 ### Framework & Library Version
 
 - To get the ZeroMQ library version as a tuple, please use
-`SwiftyZeroMQ.version`:
+  `SwiftyZeroMQ.version`:
 
 ```swift
 // Library version as a tuple
@@ -189,7 +196,7 @@ print("ZeroMQ library version is \(versionString)")
 ```
 
 - To get the ZeroMQ framework version a string, please use
-`SwiftyZeroMQ.frameworkVersion`:
+  `SwiftyZeroMQ.frameworkVersion`:
 
 ```swift
 // Framework version as a string
@@ -200,11 +207,12 @@ print("SwiftyZeroMQ framework version is \(SwiftyZeroMQ.frameworkVersion)")
 
 Use `SwiftyZero.has` to check whether the ZeroMQ capability is enabled or not.
 The list of capabilities that can be checked:
-- `.ipc`    - the library supports the `ipc://` protocol
-- `.pgm`    - the library supports the `pgm://` protocol
-- `.tipc`   - the library supports the `tipc://` protocol
-- `.norm`   - the library supports the `norm://` protocol
-- `.curve`  - the library supports the [`CURVE`](http://curvezmq.org) security
+
+- `.ipc` - the library supports the `ipc://` protocol
+- `.pgm` - the library supports the `pgm://` protocol
+- `.tipc` - the library supports the `tipc://` protocol
+- `.norm` - the library supports the `norm://` protocol
+- `.curve` - the library supports the [`CURVE`](http://curvezmq.org) security
   mechanism
 - `.gssapi` - the library supports the GSSAPI security mechanism
 
@@ -226,7 +234,7 @@ The class `SwiftyZeroMQ.Context` is a wrapper for `zmq_context` and
 predominantly handles application-level configuration and creation of
 `SwiftyZeroMQ.Socket` instances:
 
-```swift 
+```swift
 let context   = SwiftyZeroMQ.Context()
 let requestor = context.socket(.request)
 let replier   = context.socket(.reply)
@@ -281,22 +289,22 @@ try poller.register(socket: requestor, flags: .pollIn)
 
 The `flags` argument gives those events which are to be monitored. Multiple
 events can be monitored with:
+
 ```swift
 try poller.register(socket: requestor, flags: [.pollIn, .pollOut])
 ```
 
-When ```poller.poll()``` is invoked, it returns a dictionary `[Socket:
-PollFlags]` which describes which of the monitored events have occurred. Keys
+When `poller.poll()` is invoked, it returns a dictionary `[Socket: PollFlags]` which describes which of the monitored events have occurred. Keys
 are the registered sockets, while values are which of the monitored events has
 occurred (or `PollFlags.none` if none of these).
 
 A complete list of these events is given in `SwiftyZeroMQ.PollFlags`; these
 consist of:
 
-- `PollFlags.pollIn`   - data can be obtained by `recv`.
-- `PollFlags.pollOut`  - data can be sent using `send`.
-- `PollFlags.pollErr`  - an error has occurred.
-- `PollFlags.none`     - no events have occurred.
+- `PollFlags.pollIn` - data can be obtained by `recv`.
+- `PollFlags.pollOut` - data can be sent using `send`.
+- `PollFlags.pollErr` - an error has occurred.
+- `PollFlags.none` - no events have occurred.
 
 Note that the poller will continue to report `pollIn` until `recv` has been
 called to retrieve all stored messages. Likewise `pollOut` will always be

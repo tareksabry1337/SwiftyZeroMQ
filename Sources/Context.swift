@@ -286,6 +286,12 @@ extension SwiftyZeroMQ {
             }
         }
 
+        public func hash(into hasher: inout Hasher) {
+            if let handleHashValue = handle?.hashValue {
+                hasher.combine(handleHashValue)
+            }
+        }
+
         /**
             Equatable implementation (inherited from Hashable)
         */
