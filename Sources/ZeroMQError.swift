@@ -21,8 +21,13 @@ extension SwiftyZeroMQ {
             Returns the last ZMQ library error with a string error description
          */
         public static var last : ZeroMQError {
-            let errorCString = zmq_strerror(zmq_errno())!
-            let description  = String(validatingUTF8: errorCString)!
+            guard
+                let errorCString = zmq_strerror(zmq_errno()),
+                let description  = String(validatingUTF8: errorCString)
+            else {
+                return ZeroMQError.unknown
+            }
+            
             return ZeroMQError(description: description)
         }
 
@@ -39,6 +44,13 @@ extension SwiftyZeroMQ {
         public static var unimplemented : ZeroMQError {
             return ZeroMQError(
               description: "Unimplemented at the moment. PRs are welcome")
+        }
+        
+        /**
+          Returns an unknown error
+         */
+        public static var unknown : ZeroMQError {
+            return ZeroMQError(description: "Unkonwn Error")
         }
 
         //TODO wrap EHOSTUNREACH
