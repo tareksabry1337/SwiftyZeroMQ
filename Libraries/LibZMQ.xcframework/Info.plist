@@ -8,7 +8,7 @@
 			<key>LibraryIdentifier</key>
 			<string>macos-x86_64</string>
 			<key>LibraryPath</key>
-			<string>libzmq-macos.a</string>
+			<string>libzmq.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>x86_64</string>
@@ -20,7 +20,7 @@
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_armv7_armv7s</string>
 			<key>LibraryPath</key>
-			<string>libzmq-ios.a</string>
+			<string>libzmq.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
@@ -34,7 +34,7 @@
 			<key>LibraryIdentifier</key>
 			<string>ios-i386_x86_64-simulator</string>
 			<key>LibraryPath</key>
-			<string>libzmq-ios-sim.a</string>
+			<string>libzmq.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>i386</string>
