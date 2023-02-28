@@ -24,9 +24,6 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target  = "2.0"
   s.libraries                  = "c++"
   s.source_files               = "Sources/*.{h,swift}"
-  s.ios.vendored_libraries     = "Libraries/libzmq-ios.a"
-  s.osx.vendored_libraries     = "Libraries/libzmq-macos.a"
-  s.tvos.vendored_libraries    = "Libraries/libzmq-tvos.a"
-  s.watchos.vendored_libraries = "Libraries/libzmq-watchos.a"
+  s.vendored_frameworks        = "Libraries/LibZMQ.xcframework"
   s.preserve_paths             = "Sources/*.{a,h}"
 end

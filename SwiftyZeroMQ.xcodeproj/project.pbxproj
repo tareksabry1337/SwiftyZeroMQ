@@ -3,17 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0408D7ED1DB93C710038830A /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408D7EB1DB93C710038830A /* zmq.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042181391DD89E3100F8922C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 042181381DD89E3100F8922C /* libc++.tbd */; };
-		042AEE9C1DDB09FB0019D27B /* libzmq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEE981DDB09FB0019D27B /* libzmq-ios.a */; };
-		042AEEA01DDB0A8A0019D27B /* libzmq-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEE991DDB09FB0019D27B /* libzmq-macos.a */; };
-		042AEEA11DDB0AA70019D27B /* libzmq-tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEE9A1DDB09FB0019D27B /* libzmq-tvos.a */; };
-		042AEEA21DDB0ABC0019D27B /* libzmq-watchos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEE9B1DDB09FB0019D27B /* libzmq-watchos.a */; };
-		042AEEA41DDB0B090019D27B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEEA31DDB0B090019D27B /* libc++.tbd */; };
 		0461FA101DC0CC82009F877A /* ZeroMQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */; };
 		047B52551DB7ADF500F2F202 /* SwiftyZeroMQ.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 047B52541DB7ADF500F2F202 /* SwiftyZeroMQ.podspec */; };
 		04A64D401DD0759F00FF6270 /* PollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A64D3C1DD06E2900FF6270 /* PollerTests.swift */; };
@@ -28,7 +23,6 @@
 		04AA85741DC9E1940026AE5E /* ZeroMQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */; };
 		04AA85761DC9E2BA0026AE5E /* SwiftyZeroMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E06A5C1DB89F3E00EFC3E0 /* SwiftyZeroMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04AA85771DC9E2BA0026AE5E /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408D7EB1DB93C710038830A /* zmq.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04AA85791DC9E3300026AE5E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA85781DC9E3300026AE5E /* libc++.tbd */; };
 		04AA85881DC9E5780026AE5E /* SwiftyZeroMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA857F1DC9E5770026AE5E /* SwiftyZeroMQ.framework */; };
 		04AA85961DC9E66F0026AE5E /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D84E4D1DB63BF500AD9652 /* Context.swift */; };
 		04AA85971DC9E66F0026AE5E /* Poller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D84E501DB63BF500AD9652 /* Poller.swift */; };
@@ -39,7 +33,6 @@
 		04AA859C1DC9E66F0026AE5E /* ZeroMQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */; };
 		04AA859D1DC9E67B0026AE5E /* SwiftyZeroMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E06A5C1DB89F3E00EFC3E0 /* SwiftyZeroMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04AA859E1DC9E67B0026AE5E /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408D7EB1DB93C710038830A /* zmq.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04AA85A11DC9E69D0026AE5E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA85A01DC9E69D0026AE5E /* libc++.tbd */; };
 		04AA85A21DC9E6DE0026AE5E /* ZeroMQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D84E411DB637E800AD9652 /* ZeroMQTests.swift */; };
 		04AA85E91DC9EF0E0026AE5E /* SwiftyZeroMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA85E01DC9EF0E0026AE5E /* SwiftyZeroMQ.framework */; };
 		04AA85F71DC9EFF50026AE5E /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D84E4D1DB63BF500AD9652 /* Context.swift */; };
@@ -65,6 +58,7 @@
 		04D84E5C1DB63BF500AD9652 /* SocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D84E531DB63BF500AD9652 /* SocketType.swift */; };
 		04E06A5F1DB89F3E00EFC3E0 /* SwiftyZeroMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E06A5C1DB89F3E00EFC3E0 /* SwiftyZeroMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E06A601DB89F3E00EFC3E0 /* SwiftyZeroMQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E06A5D1DB89F3E00EFC3E0 /* SwiftyZeroMQ.swift */; };
+		CB398B8E29AE391B00BAE28E /* LibZMQ.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB398B8D29AE391B00BAE28E /* LibZMQ.xcframework */; };
 		E925E1A91F04049500BEEC3C /* ZMQPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925E1A81F04049500BEEC3C /* ZMQPatternsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,21 +89,14 @@
 /* Begin PBXFileReference section */
 		0408D7EB1DB93C710038830A /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
 		042181381DD89E3100F8922C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		042AEE981DDB09FB0019D27B /* libzmq-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-ios.a"; path = "Libraries/libzmq-ios.a"; sourceTree = "<group>"; };
-		042AEE991DDB09FB0019D27B /* libzmq-macos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-macos.a"; path = "Libraries/libzmq-macos.a"; sourceTree = "<group>"; };
-		042AEE9A1DDB09FB0019D27B /* libzmq-tvos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-tvos.a"; path = "Libraries/libzmq-tvos.a"; sourceTree = "<group>"; };
-		042AEE9B1DDB09FB0019D27B /* libzmq-watchos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-watchos.a"; path = "Libraries/libzmq-watchos.a"; sourceTree = "<group>"; };
-		042AEEA31DDB0B090019D27B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		0442A8CC1DC21BEF00F82B75 /* Manual.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Manual.md; path = Documentation/Manual.md; sourceTree = "<group>"; };
 		0442A8CE1DC224B000F82B75 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroMQError.swift; sourceTree = "<group>"; };
 		047B52541DB7ADF500F2F202 /* SwiftyZeroMQ.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyZeroMQ.podspec; sourceTree = "<group>"; };
 		04A64D3C1DD06E2900FF6270 /* PollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollerTests.swift; sourceTree = "<group>"; };
 		04AA85651DC9E1390026AE5E /* SwiftyZeroMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04AA85781DC9E3300026AE5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		04AA857F1DC9E5770026AE5E /* SwiftyZeroMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA85871DC9E5780026AE5E /* SwiftyZeroMQ-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyZeroMQ-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04AA85A01DC9E69D0026AE5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		04AA85E01DC9EF0E0026AE5E /* SwiftyZeroMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA85E81DC9EF0E0026AE5E /* SwiftyZeroMQ-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyZeroMQ-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BD1F741DB64E7500E285A4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -127,6 +114,7 @@
 		04D84E531DB63BF500AD9652 /* SocketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketType.swift; sourceTree = "<group>"; };
 		04E06A5C1DB89F3E00EFC3E0 /* SwiftyZeroMQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyZeroMQ.h; sourceTree = "<group>"; };
 		04E06A5D1DB89F3E00EFC3E0 /* SwiftyZeroMQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyZeroMQ.swift; sourceTree = "<group>"; };
+		CB398B8D29AE391B00BAE28E /* LibZMQ.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LibZMQ.xcframework; path = Libraries/LibZMQ.xcframework; sourceTree = "<group>"; };
 		E925E1A81F04049500BEEC3C /* ZMQPatternsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMQPatternsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042AEEA21DDB0ABC0019D27B /* libzmq-watchos.a in Frameworks */,
-				04AA85791DC9E3300026AE5E /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042AEEA11DDB0AA70019D27B /* libzmq-tvos.a in Frameworks */,
-				04AA85A11DC9E69D0026AE5E /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042AEEA41DDB0B090019D27B /* libc++.tbd in Frameworks */,
-				042AEEA01DDB0A8A0019D27B /* libzmq-macos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042AEE9C1DDB09FB0019D27B /* libzmq-ios.a in Frameworks */,
+				CB398B8E29AE391B00BAE28E /* LibZMQ.xcframework in Frameworks */,
 				042181391DD89E3100F8922C /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,10 +179,7 @@
 		042AEE971DDB09D20019D27B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				042AEE981DDB09FB0019D27B /* libzmq-ios.a */,
-				042AEE991DDB09FB0019D27B /* libzmq-macos.a */,
-				042AEE9A1DDB09FB0019D27B /* libzmq-tvos.a */,
-				042AEE9B1DDB09FB0019D27B /* libzmq-watchos.a */,
+				CB398B8D29AE391B00BAE28E /* LibZMQ.xcframework */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -275,10 +254,7 @@
 		04D84E601DB63C0D00AD9652 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				042AEEA31DDB0B090019D27B /* libc++.tbd */,
 				042181381DD89E3100F8922C /* libc++.tbd */,
-				04AA85A01DC9E69D0026AE5E /* libc++.tbd */,
-				04AA85781DC9E3300026AE5E /* libc++.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -690,7 +666,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -716,7 +696,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -741,7 +725,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -766,7 +754,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -786,7 +778,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.SwiftyZeroMQ-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -800,7 +796,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.SwiftyZeroMQ-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -822,7 +822,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -849,7 +853,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -871,7 +879,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.SwiftyZeroMQ-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -888,7 +900,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.SwiftyZeroMQ-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -992,7 +1008,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1011,7 +1028,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -1036,7 +1057,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -1054,7 +1079,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.azawawi.ZeroMQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1066,7 +1095,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.azawawi.ZeroMQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
